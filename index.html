@@ -1,0 +1,201 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Mobile</title>
+  
+  <!-- GOOGLE FONTS: POppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="mobile-frame">
+
+    <!-- 1. TOP MOBILE STATUS BAR (Time & Battery) -->
+    <div class="status-bar">
+      <span class="time">9:00</span>
+      <div class="status-icons">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 2. TOP HEADER (Profile Pic & Filter Chips) -->
+    <header class="top-header">
+      <img src="Album cover/tanu.jpg" class="avatar" alt="Profile">
+      <div class="chips-row">
+        <button class="chip active">All</button>
+        <button class="chip">Music</button>
+        <button class="chip">Podcasts</button>
+      </div>
+    </header>
+
+    <!-- 2. RECENT PLAYLISTS GRID -->
+    <section class="recent-grid">
+
+      <div class="recent-card">
+        <img src="Album cover/auxcord.jpg" alt="Album Cover">
+        <span>The Aux Cord Takeover</span>
+      </div>
+
+      <div class="recent-card">
+        <img src="Album cover/desi.jpg" alt="Album Cover">
+        <span>Unapologetically Loud Desi</span>
+      </div>
+
+      <div class="recent-card">
+        <img src="Album cover/gazhal.jpg" alt="Album Cover">
+        <span>Gazal Night</span>
+      </div>
+
+      <div class="recent-card">
+        <img src="Album cover/swifty.jpg" alt="Album Cover">
+        <span>Taylor Swift Fairyland</span>
+      </div>
+
+      <div class="recent-card">
+        <img src="Album cover/banger.jpg" alt="Album Cover">
+        <span>Pop nights and bright lights</span>
+      </div>
+
+      <div class="recent-card">
+        <img src="Album cover/bolly.jpg" alt="Album Cover">
+        <span>Nostalgia Bollywood Bangers</span>
+      </div>
+
+       <div class="recent-card">
+        <img src="Album cover/hope.jpg" alt="Album Cover">
+        <span>To live for the hope of it all</span>
+       </div>
+
+       <div class="recent-card">
+        <img src="Album cover/summer.jpg" alt="Album Cover">
+        <span>Manfesting a Euro Summer</span>
+       </div>
+    </section>
+
+    <!-- 3. NEW RELEASE SECTION -->
+    <section class="new-release-section">
+      
+      <!-- Artist Info Row -->
+      <div class="artist-info">
+        <img src="Album cover/gracie abrams (1).jpg" class="artist-avatar" alt="Gracie Abrams">
+        <div class="artist-text">
+          <span class="sub-heading">New Release From</span>
+          <h2 class="artist-name">Gracie Abrams</h2>
+        </div>
+      </div>
+
+      <!-- Album Card -->
+      <div class="album-card">
+        <img src="Album cover/the secret of us.jpg" class="album-cover" alt="The Secret of Us">
+        
+        <div class="album-details">
+          <div class="card-header">
+            <span class="tag">Album</span>
+            <i class="fa-solid fa-ellipsis-vertical menu-icon"></i>
+          </div>
+
+          <h3 class="album-title">The Secret of Us</h3>
+          <p class="artist-subtext">Gracie Abrams</p>
+
+          <div class="card-actions">
+            <button class="action-btn check-btn">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="action-btn play-btn">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 4. HORIZONTAL SCROLL SHELF ("Jump back in") -->
+    <section class="shelf-section">
+      <h2 class="shelf-title">Jump back in</h2>
+      
+      <div class="horizontal-scroll">
+        <!-- Card 1 -->
+        <div class="square-card">
+          <img src="Album cover/less than a lover.jpg" alt="Less Than a Lover">
+          <span class="card-tag">Single</span>
+          <p class="card-title">Less Than a Lover</p>
+          <p class="card-artist">JENNIE</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="square-card">
+          <img src="Album cover/thetorturedpoetsdepartment.jpg" alt="TTPD">
+          <span class="card-tag">Album</span>
+          <p class="card-title">THE TORTURED POETS DEPARTMENT</p>
+          <p class="card-artist">Taylor Swift</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="square-card">
+          <img src="Album cover/the great divide.jpg" alt="The Great Impersonator">
+          <span class="card-tag">Album</span>
+          <p class="card-title">The Great Impersonator</p>
+          <p class="card-artist">Halsey</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FLOATING MINI PLAYER -->
+    <div class="mini-player">
+      <div class="player-left">
+        <img src="Album cover/petal.jpg" class="now-playing-img" alt="Now Playing">
+        <div class="song-details">
+          <p class="song-title">Hate that i made you love me</p>
+          <p class="song-artist">Ariana Grande</p>
+        </div>
+      </div>
+
+      <div class="player-right">
+        <i class="fa-solid fa-volume-high player-icon"></i>
+        <i class="fa-regular fa-circle-plus save-icon"></i>
+        <i class="fa-solid fa-play player-play-icon"></i>
+      </div>
+
+      <!-- Thin White Progress Bar at Bottom -->
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- 6. BOTTOM NAVIGATION BAR -->
+    <nav class="bottom-nav">
+      <div class="nav-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Search</span>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-lines-leaning"></i>
+        <span>Your library</span>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-plus"></i>
+        <span>Create</span>
+      </div>
+    </nav>
+
+  </div>
+
+</body>
+</html>
