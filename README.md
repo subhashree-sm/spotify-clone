@@ -26,6 +26,8 @@ This project focuses on translating Spotify's iconic dark-themed interface into 
 
 ---
 
+![Spotify Clone UI Design](spotify.png)
+
 ### 🚀 How to View Locally
 
 1. Clone this repository:
